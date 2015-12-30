@@ -1,0 +1,31 @@
+{
+  "name": "regtester",
+  "version": "0.0.1",
+  "description": "A library for doing simple output-based regression tests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodeunit test/capitalizer-test.js",
+    "update-output": "UPDATE_REGTEST_DATA=1 nodeunit test/capitalizer-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artillery/node-regtester.git"
+  },
+  "keywords": [
+    "regression",
+    "tests"
+  ],
+  "author": "Mark Logan <mark@artillery.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artillery/node-regtester/issues"
+  },
+  "homepage": "https://github.com/artillery/node-regtester",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "nodeunit": "^0.9.1"
+  },
+  "dependencies": {
+    "temp": "^0.8.3"
+  }
+}
